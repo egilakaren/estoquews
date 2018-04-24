@@ -35,7 +35,7 @@ public class EstoqueWS {
 		List<Item> itensResultado = dao.todosItens(lista);
 		return new ListaItens(itensResultado);
 	}
-	
+	 
 	@WebMethod(operationName = "cadastrarItem")
 	@WebResult(name = "item")
 	public Item cadastrarItem(@WebParam(name = "item") Item item,
